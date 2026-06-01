@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وهمي المدينة</title>
+<style>
+body {
+background:#2e2d2d;
+font-family:Arial,sans-serif;
+margin:0;
+padding:40px;
+display:flex;
+justify-content:center;
+color:white;
+}
+.container {
+width:100%;
+max-width:850px;
+background:#3f3a3a;
+padding:40px;
+border-radius:30px;
+}
+h1 {
+text-align:center;
+font-size:42px;
+color:#ff3131;
+}
+.subtitle {
+text-align:center;
+line-height:2;
+color:#ccc;
+margin-bottom:40px;
+}
+.section {
+margin-bottom:35px;
+}
+label {
+display:block;
+font-size:22px;
+font-weight:bold;
+margin-bottom:15px;
+}
+.grid {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+.card {
+background:#222;
+padding:20px;
+border-radius:20px;
+}
+select,textarea,input[type=text] {
+width:100%;
+padding:14px;
+border:none;
+border-radius:15px;
+background:#0d0d0d;
+color:white;
+margin-top:10px;
+}
+textarea {
+height:140px;
+}
+button {
+width:100%;
+padding:20px;
+background:#ff3131;
+border:none;
+border-radius:20px;
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+.footer {
+margin-top:40px;
+text-align:center;
+line-height:2;
+color:#999;
+}
+</style>
+</head>
+<body>
+  <form class="container" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="38a219a0-03c8-4556-9312-3b3c4c272910">
+
+<div class="container">
+<div class="header" style="display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:20px;">
+  <img src="wahmy2.png" alt="wahmy" style="width:80px;height:auto;border-radius:12px;">
+  <h1 style="margin:0;">رأيك يصنع تجربة وهمي القادمة</h1>
+  <img src="wahmy2.png" alt="wahmy" style="width:80px;height:auto;border-radius:12px;">
+</div>
+
+<div class="subtitle">
+<label for="branchSelect" style="display:block;width:100%;font-size:20px;font-weight:bold;margin:0 0 10px 0;text-align:right;direction:rtl;">اختر الفرع : </label>
+<select id="branchSelect"name="branch">width:100%;padding:12px;border-radius:12px;border:none;background:#0d0d0d;color:white;font-size:18px;">
+<option value="وهمي المدينة">وهمي المدينة</option>
+<option value="وهمي المقابلين">وهمي المقابلين</option>
+<option value="وهمي وسط البلد">وهمي وسط البلد</option>
+<option value="وهمي طبربور">وهمي طبربور</option>
+</select>
+</div>
+
+
+<div class="section">
+<label>كيف كانت تجربتك اليوم؟</label>
+<select name="overall_experience" required>
+<option>⭐⭐⭐⭐⭐ ممتازة</option>
+<option>⭐⭐⭐⭐ جيدة جدًا</option>
+<option>⭐⭐⭐ جيدة</option>
+<option>⭐⭐ مقبولة</option>
+<option>⭐ سيئة</option>
+</select>
+</div>
+
+<div class="section">
+<label>قيّم العناصر التالية</label>
+
+<div class="grid">
+
+<div class="card">
+الطعم
+<select name="taste">
+<option>ممتاز</option>
+<option>جيد</option>
+<option>مقبول</option>
+<option>سيء</option>
+</select>
+</div>
+
+<div class="card">
+حرارة الطعام
+<select name="temperature">
+<option>ممتاز</option>
+<option>جيد</option>
+<option>مقبول</option>
+<option>سيء</option>
+</select>
+</div>
+
+<div class="card">
+سرعة الخدمة
+<select name="speed">
+<option>ممتاز</option>
+<option>جيد</option>
+<option>مقبول</option>
+<option>سيء</option>
+</select>
+</div>
+
+<div class="card">
+شكل المنتج
+<select name="product_appearance">
+<option>ممتاز</option>
+<option>جيد</option>
+<option>مقبول</option>
+<option>سيء</option>
+</select>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<label>اكتب ملاحظتك :</label>
+<textarea name="notes"></textarea>
+</div>
+
+<div class="section">
+<label>هل ستزور وهمي مرة أخرى؟</label>
+<select name="visit_again">
+<option>بالتأكيد</option>
+<option>ممكن</option>
+<option>لا</option>
+</select>
+</div>
+<div class="section">
+<label>رقم الهاتف (اختياري)</label>
+<input type="text" name="phone" placeholder="07XXXXXXXX">
+</div>
+<button type="submit">إرسال التقييم</button>
+
+<div class="footer">
+جميع التقييمات يتم مراجعتها فعليًا من إدارة التشغيل والجودة.<br>
+🍔 Wahmy Burger
+</div>
+</form>
+
+</div>
+</body>
+</html>
